@@ -7,7 +7,7 @@ use Exporter ();
 
 {
     no strict;
-    $VERSION = '0.02';
+    $VERSION = '0.03';
     @ISA = qw(DynaLoader);
     if ($ENV{MOD_PERL}) {
 	__PACKAGE__->bootstrap($VERSION);

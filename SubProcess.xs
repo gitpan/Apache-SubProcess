@@ -136,3 +136,10 @@ pfclose(r, sv)
     iop = sv_2io(sv);
     ap_pfclose(r->pool, IoIFP(iop));
     IoIFP(iop) = NULL;
+
+void
+cleanup_for_exec(r=NULL)
+    Apache r
+
+    CODE:
+    ap_cleanup_for_exec();
